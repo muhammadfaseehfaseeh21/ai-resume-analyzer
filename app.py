@@ -41,7 +41,7 @@ with col1:
     resume_text = ""
     if uploaded_file is not None:
         try:
-            resume_text = extract_text_from_file(uploaded_file)
+            "resume_text" = extract_text_from_file(uploaded_file)
             st.success(f"Successfully loaded {uploaded_file.name}")
             with st.expander("Preview Extracted Resume Text"):
                 st.text_area("Resume Content", resume_text, height=200, disabled=True)
