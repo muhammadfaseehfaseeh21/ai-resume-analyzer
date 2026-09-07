@@ -28,7 +28,7 @@ def analyze_resume(resume_text: str, job_description: str, api_key: str = None, 
     response = model.generate_content(prompt)
     return response.text
 
-def generate_tailored_resume(resume_text: str, job_description: str, api_key: str = None, model_name: str = "openai/gpt-oss-120b") -> str:
+def generate_tailored_resume(resume_text: str, job_description: str, api_key: str = None, model_name: str = "gemini_2.5_flash","gemini_2.5_pro","gemini_3.7_flash") -> str:
     """
     Generates tailored bullet points and suggestions for resume improvement.
     """
