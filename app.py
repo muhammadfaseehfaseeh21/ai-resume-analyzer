@@ -26,7 +26,7 @@ env_api_key = os.getenv("GEMINI_API_KEY", "")
 user_api_key = st.sidebar.text_input("Gemini API Key", value=env_api_key, type="password", help="Enter your Google Gemini API key.")
 
 model_choice = st.sidebar.selectbox(
-    "Select Model", ["openai/gpt-oss-120b"],
+    "Select Model", ["gemini_2.5_flash","gemini_2.5_pro","gemini_3.7_flash"],
     index=0
 )
 
