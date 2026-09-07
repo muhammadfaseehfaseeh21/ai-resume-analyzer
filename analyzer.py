@@ -13,7 +13,7 @@ def configure_gemini(api_key: str = None):
         raise ValueError("Gemini API key is required. Provide it via UI or set GEMINI_API_KEY in environment.")
     genai.configure(api_key=key)
 
-def analyze_resume(resume_text: str, job_description: str, api_key: str = None, model_name: str = "gemini-3.8-flash") -> str:
+def analyze_resume(resume_text: str, job_description: str, api_key: str = None, model_name: str ="openai/gpt-oss-120b") -> str:
     """
     Analyzes resume against job description and returns detailed feedback.
     """
