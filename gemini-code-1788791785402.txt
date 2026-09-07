@@ -1,0 +1,19 @@
+# Environment variables and secrets
+.env
+.streamlit/secrets.toml
+
+# Python bytecode & cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual Environments
+venv/
+env/
+ENV/
+
+# Build & distribution folders
+dist/
+build/
+*.egg-info/
