@@ -4,7 +4,7 @@ Core business logic for interacting with Google Gemini API.
 
 import os
 import google.generativeai as genai
-from .prompts import RESUME_ANALYSIS_PROMPT, RESUME_TAILORING_PROMPT
+from prompts import RESUME_ANALYSIS_PROMPT, RESUME_TAILORING_PROMPT
 
 def configure_gemini(api_key: str = None):
     """Configure Gemini API with key from parameter or environment."""
