@@ -26,8 +26,7 @@ env_api_key = os.getenv("GEMINI_API_KEY", "")
 user_api_key = st.sidebar.text_input("Gemini API Key", value=env_api_key, type="password", help="Enter your Google Gemini API key.")
 
 model_choice = st.sidebar.selectbox(
-    "Select Model",
-    ["gemini-1.5-flash", "gemini-1.5-pro"],
+    "Select Model",["gemini-1.5-flash"]
     index=0
 )
 
